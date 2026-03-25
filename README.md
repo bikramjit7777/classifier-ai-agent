@@ -9,7 +9,7 @@ The core idea is simple: load a list of tasks from `tasks.txt`, send them to an 
 
 ---
 
-## ✅ Features
+## Features
 
 - Reads task list from a plain text file (`tasks.txt`).
 - Sends the task list to an LLM with a fixed prompt asking for priority classification.
@@ -17,14 +17,14 @@ The core idea is simple: load a list of tasks from `tasks.txt`, send them to an 
 
 ---
 
-## 🔧 Prerequisites
+## Prerequisites
 
 - Python 3.10+ 
 - An OpenAI API key (for `task_agent-open.py`) **OR** a Google Gemini API key (for `task_agent-gem.py`)
 
 ---
 
-## 🧩 Installation
+## Installation
 
 1. Clone the repo (or download the files).
 2. Create and activate a virtual environment (recommended):
@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 ---
 
-## ⚙️ Configuration
+## Configuration
 
 Copy the example env file and set your API key:
 
@@ -66,7 +66,7 @@ Then edit `.env` and set one or both keys depending on which script you want to 
 
 ---
 
-## ▶️ Usage
+## Usage
 
 ### Run the OpenAI variant
 
@@ -84,7 +84,7 @@ Each script reads `tasks.txt`, sends a prompt to the model, and prints a priorit
 
 ---
 
-## 📝 Customizing the Task List
+## Customizing the Task List
 
 Edit `tasks.txt` with one task per line. Example:
 
@@ -96,7 +96,7 @@ Schedule team standup
 
 ---
 
-## 🛠️ How It Works (Quick Overview)
+## How It Works (Quick Overview)
 
 Each script:
 
@@ -104,5 +104,3 @@ Each script:
 2. Builds a prompt asking the model to categorize tasks into High/Medium/Low priority.
 3. Sends the prompt to the selected API.
 4. Prints the model’s response.
-
----
